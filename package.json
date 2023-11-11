@@ -1,6 +1,6 @@
 {
   "name": "@mahpooya/laravel-mix",
-  "version": "6.0.52",
+  "version": "6.0.53",
   "description": "The power of webpack, distilled for the rest of us (Fork for update dependencies and webpack and merged from helios-ag).",
   "main": "src/index.js",
   "types": "types/index.d.ts",
@@ -84,7 +84,7 @@
     "postcss-load-config": "^4.0.1",
     "postcss-loader": "^7.3.3",
     "semver": "^7.5.4",
-    "strip-ansi": "^7.1.0",
+    "strip-ansi": "^6.0.1",
     "style-loader": "^3.3.3",
     "terser": "^5.22.0",
     "terser-webpack-plugin": "^5.3.9",
