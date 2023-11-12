@@ -1,5 +1,5 @@
 let dotenv = require('dotenv');
-let expand = require('dotenv-expand');
+let { expand } = require('dotenv-expand');
 
 /** @internal */
 class MixDefinitionsPlugin {
