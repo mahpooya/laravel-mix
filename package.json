@@ -1,6 +1,6 @@
 {
   "name": "@mahpooya/laravel-mix",
-  "version": "6.0.53",
+  "version": "6.0.54",
   "description": "The power of webpack, distilled for the rest of us (Fork for update dependencies and webpack and merged from helios-ag).",
   "main": "src/index.js",
   "types": "types/index.d.ts",

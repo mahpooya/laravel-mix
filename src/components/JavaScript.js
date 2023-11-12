@@ -1,4 +1,4 @@
-const glob = require('glob');
+const { glob } = require('glob');
 const File = require('../File');
 const Assert = require('../Assert');
 const { Component } = require('./Component');
