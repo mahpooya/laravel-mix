@@ -1,6 +1,6 @@
 {
   "name": "@mahpooya/laravel-mix",
-  "version": "6.0.57",
+  "version": "6.0.58",
   "description": "The power of webpack, distilled for the rest of us (Fork for update dependencies and webpack and merged from helios-ag).",
   "main": "src/index.js",
   "types": "types/index.d.ts",
@@ -73,7 +73,7 @@
     "dotenv-expand": "^10.0.0",
     "file-loader": "^6.2.0",
     "fs-extra": "^11.1.1",
-    "glob": "^10.3.10",
+    "glob": "^7.2.0",
     "html-loader": "^4.2.0",
     "imagemin": "^8.0.1",
     "img-loader": "^4.0.0",

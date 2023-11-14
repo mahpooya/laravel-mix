@@ -1,5 +1,5 @@
 let path = require('path');
-let { glob } = require('glob');
+let glob = require('glob');
 let File = require('../File');
 let { promisify } = require('util');
 let { concat } = require('lodash');
