@@ -38,6 +38,14 @@ module.exports = function (mix) {
     // Handle all custom, non-webpack tasks.
     plugins.push(new CustomTasksPlugin(mix));
 
+    //TODO: remove this:
+    console.log("webpack-plugins.js mahpooya logs");
+    console.log(
+        JSON.stringify({
+            a: 'try to plugins.push(new BuildCallbackPlugin...',
+        }),
+    );
+
     // Notify the rest of our app when Webpack has finished its build.
     plugins.push(new BuildCallbackPlugin(stats => mix.dispatch('build', stats)));
 

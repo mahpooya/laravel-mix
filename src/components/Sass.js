@@ -7,7 +7,7 @@ module.exports = class Sass extends Preprocessor {
     dependencies() {
         this.requiresReload = true;
 
-        const deps = ['sass-loader@^12.1.0', 'sass'];
+        const deps = ['sass-loader@^13.3.2', 'sass'];
 
         if (this.context.config.processCssUrls) {
             deps.push('resolve-url-loader@^5.0.0');

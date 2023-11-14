@@ -250,7 +250,7 @@ module.exports = function (mix) {
         /**
          * Sets the css module identifier pattern
          *
-         * For more information see https://github.com/webpack-contrib/css-loader/tree/v5.2.7#localidentname
+         * For more information see https://github.com/webpack-contrib/css-loader/tree/v6.8.1#localidentname
          */
         cssModuleIdentifier: '[hash:base64]',
 

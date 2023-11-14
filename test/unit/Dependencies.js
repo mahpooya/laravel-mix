@@ -66,13 +66,13 @@ test.serial('it can install all queued dependencies at once', async t => {
 test.serial('it can utilize custom checks for a dependency: false', async t => {
     const dependencies = new Dependencies();
 
-    const cmd = 'npm install postcss@^8.1 --save-dev --legacy-peer-deps';
+    const cmd = 'npm install postcss@^8.4.31 --save-dev --legacy-peer-deps';
 
     const stub = sinon.stub().returns(true);
 
     dependencies.enqueue([
         {
-            package: 'postcss@^8.1',
+            package: 'postcss@^8.4.31',
             check: stub
         }
     ]);
@@ -86,14 +86,14 @@ test.serial('it can utilize custom checks for a dependency: false', async t => {
 test.serial('it can utilize custom checks for a dependency: true', async t => {
     const dependencies = new Dependencies();
 
-    const cmd = 'npm install postcss@^8.1 --save-dev --legacy-peer-deps';
+    const cmd = 'npm install postcss@^8.4.31 --save-dev --legacy-peer-deps';
 
     const spy = sinon.spy();
     const require = createRequire(import.meta.url);
 
     dependencies.enqueue([
         {
-            package: 'postcss@^8.1',
+            package: 'postcss@^8.4.31',
             check: name => {
                 spy();
 

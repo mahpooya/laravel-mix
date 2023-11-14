@@ -132,10 +132,10 @@ function* buildRules(mix) {
                     'assets'
                 ]);
 
-                return `${dirs.images}/vendor/${filename}?[hash]`;
+                return `${dirs.images}/vendor/${filename}?[contenthash]`;
             }
 
-            return `${dirs.images}/[name][ext]?[hash]`;
+            return `${dirs.images}/[name][ext]?[contenthash]`;
         }
     });
 
@@ -150,16 +150,16 @@ function* buildRules(mix) {
                     'assets'
                 ]);
 
-                return `${dirs.fonts}/vendor/${filename}?[hash]`;
+                return `${dirs.fonts}/vendor/${filename}?[contenthash]`;
             }
 
-            return `${dirs.fonts}/[name][ext]?[hash]`;
+            return `${dirs.fonts}/[name][ext]?[contenthash]`;
         }
     });
 
     // Add support for loading cursor files.
     yield* asset({
         test: /\.(cur|ani)$/,
-        name: () => '[name][ext]?[hash]'
+        name: () => '[name][ext]?[contenthash]'
     });
 }
