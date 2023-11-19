@@ -97,19 +97,6 @@ async function executeScript(cmd, opts, args = []) {
     }
 
 
-
-    //TODO: remove this:
-    console.log("cli.js > executeScript mahpooya logs");
-    console.log(
-        JSON.stringify({
-            script,
-            processenv: process.env,
-            nodeEnv: nodeEnv,
-            scriptEnv: scriptEnv,
-        }),
-    );
-
-
     function restart() {
         let child = spawn(script, {
             stdio: 'inherit',

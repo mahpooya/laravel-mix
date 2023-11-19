@@ -14,13 +14,6 @@ class BuildCallbackPlugin {
      * @param {import("webpack").Compiler} compiler
      */
     apply(compiler) {
-        //TODO: remove this:
-        console.log("BuildCallbackPlugin.js > apply mahpooya logs");
-        console.log(
-            JSON.stringify({
-                a: 'try to compiler.hooks.done.tapPromise(\'BuildCallbackPlugin\'...',
-            }),
-        );
         compiler.hooks.done.tapPromise('BuildCallbackPlugin', async stats => {
             return await this.callback(stats);
         });
